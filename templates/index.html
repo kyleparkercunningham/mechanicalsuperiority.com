@@ -24,6 +24,14 @@
   </div></div>
 </section>
 
+{# Mark moved this band up from below the offers (2026-11-16). #}
+<section class="band straight-talk">
+  <div class="wrap">
+    <p class="big">{{ x.straight_talk }}</p>
+    <p class="small">{{ x.small_scale }}</p>
+  </div>
+</section>
+
 <section class="band">
   <div class="wrap">
     <div class="offer-list">
@@ -36,7 +44,7 @@
           <p>{% if o.more_link %}<a href="{{ get_url(path=o.more_link, trailing_slash=true) | safe }}">{{ o.more }}</a>{% else %}{{ o.more }}{% endif %}</p>
           <p class="more"><a href="{{ get_url(path=o.link, trailing_slash=true) | safe }}">{{ o.link_text }} &rarr;</a></p>
         </div>
-        <figure>{% if o.img_link %}<a href="{{ get_url(path=o.img_link, trailing_slash=true) | safe }}">{% endif %}{{ m::pic(name=o.img, alt=o.alt, fit=o.fit | default(value=false), suffix="-sm") }}{% if o.img_link %}</a>{% endif %}</figure>
+        <figure>{% if o.img_link %}<a href="{{ get_url(path=o.img_link, trailing_slash=true) | safe }}">{% endif %}{% if o.drawing %}{% include "part-drawing.html" %}{% else %}{{ m::pic(name=o.img, alt=o.alt, fit=o.fit | default(value=false), suffix="-sm") }}{% endif %}{% if o.img_link %}</a>{% endif %}</figure>
       </div>
       {% endfor %}
     </div>
@@ -56,13 +64,6 @@
   </div>
 </section>
 {% endif %}
-
-<section class="band straight-talk">
-  <div class="wrap">
-    <p class="big">{{ x.straight_talk }}</p>
-    <p class="small">{{ x.small_scale }}</p>
-  </div>
-</section>
 
 {% set work = get_section(path="work/_index.md") %}
 <section class="band">

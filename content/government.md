@@ -16,7 +16,7 @@ naics = [
 ]
 # Past performance, newest first.
 past = [
-  ["Ongoing", "Air Force travel pods, with EhPro", "Reverse engineered a prototype travel pod into part and assembly CAD models, used for Air Force structural analysis and approval of a new-construction design; now CAD/CAM, Haas GR-510 gantry milling, riveting and TIG welding for production pods.", "travel-pods"],
+  ["Ongoing", "Air Force travel pods, with EhPro", "Part and assembly CAD models and shop drawings of a prototype travel pod, used for Air Force structural analysis and approval of a new-construction design; now CAD/CAM, Haas GR-510 gantry milling, riveting and TIG welding for production pods.", "travel-pods"],
   ["2025", "Aluminum cloud signs", "TIG-welded aluminum signs and custom site mounts for a gallery installation in New Mexico.", "cloud-signs"],
   ["2024", "Topsoil screener", "Industrial machinery designed, drawn, fabricated and tested in-house.", "topsoil-screener"],
   ["2024", "Ford 641 tractor frame", "5052 aluminum tube frame and fitted canvas top, designed and built.", "tractor-frame"],

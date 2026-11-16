@@ -23,22 +23,24 @@ body = "Have an idea for a project, but not sure how to make it work? I'm your g
 more = "Talk to me face to face locally, or remotely. If you're out of my area we can even use 3D printed plastic models to check fit-and-feel before going ahead with the final manufactured parts."
 link = "/remote-cad/"
 link_text = "How remote CAD works"
-img = "bumpoff-printed-2"
-alt = "A printed plastic prototype holding a brake caliper on a bike"
+# Mark moved the travel pods here from offer 2 (2026-11-16): his partner
+# Scott does not want the pods tied to the words "reverse engineering".
+img_link = "/work/travel-pods/"
+img = "pods-model"
+alt = "CAD assembly of a riveted aluminum travel pod for the F-16"
+fit = true
 
 [[extra.offers]]
 title = "Reverse engineering of obsolete parts"
 body = "Have an old machine with a broken part that needs to be made? Let me guess: the local machine shop won't touch it without a model? Send over the part, and it comes back with a CAD model and drawings that you can take to any machine shop. Or ask for a quote to have small batches made right here in-house."
 more = "Click on the picture to the right to learn more about our reverse-engineering capabilities."
-# Mark asked for the picture to link to the travel pods (2026-09-30). The
-# sentence links there too, because on a phone the picture is below it.
-more_link = "/work/travel-pods/"
-img_link = "/work/travel-pods/"
+# The picture is the generic drawn part from the replacement parts page,
+# at Mark's request (2026-11-16); it and the sentence link there.
+more_link = "/replacement-parts/"
+img_link = "/replacement-parts/"
 link = "/replacement-parts/"
 link_text = "Replacement parts"
-img = "pods-model"
-alt = "CAD assembly of a riveted aluminum travel pod, modeled from a physical prototype"
-fit = true
+drawing = true
 
 # Title in Mark's words (2026-10-08), sentence case; the body is still ours.
 [[extra.offers]]
